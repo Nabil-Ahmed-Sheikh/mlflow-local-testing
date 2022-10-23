@@ -1,2 +1,4 @@
 mlflow server --default-artifact-root ./mlruns --backend-store-uri sqlite:///mydb.sqlite
 mlflow server --default-artifact-root ./mlruns --backend-store-uri postgresql://postgres:root@localhost/mlflowdb
+
+pulumi config set-all --plaintext aws:region=us-west-1 --plaintext pulumi_organization=sidetrek
